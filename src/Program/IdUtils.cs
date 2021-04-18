@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Person
 {
-public class IdUtils
+    public class IdUtils
     {
         /// <summary>
         /// Valida un número de cédula de identidad; el número puede tener o no puntos y el guión pero debe tener el dígito verificador. Adaptado

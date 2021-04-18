@@ -9,13 +9,11 @@ namespace Person
         static void Main(string[] args)
         {
             Person john = new Person("John Doe", "1.234.567-2");
-            Person jane = new Person("Jane Doe", "8.765.432-7");
             john.IntroduceYourself();
+            Person jane = new Person("Jane Doe", "8.765.432-7");
             jane.IntroduceYourself();
-            
-            john.Id.set("1.234.567-9");
-            john.IntroduceYourself();      
-
+            Person felipe = new Person("", "1.234.567-9");
+            felipe.IntroduceYourself();
         }
     }
 }
