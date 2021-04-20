@@ -21,7 +21,7 @@ namespace Person
                 else 
                 {
                     Console.WriteLine ("El nombre que ingresó no es válido");
-                    this.name="Error en Nombre";
+                    this.name="[[Error en Nombre]]";
                 }
             }
         }
@@ -42,7 +42,7 @@ namespace Person
                 else 
                 {
                     Console.WriteLine ("La C.I. que ingresó no es válida");
-                    this.id="Error en C.I.";
+                    this.id="[[Error en C.I.]]";
                 }
             }
         }
@@ -59,8 +59,8 @@ namespace Person
 
         public void IntroduceYourself() 
         { 
-            Console.WriteLine( 
-                $"Soy {this.name} y mi cédula es {this.id}"); 
+            if (this.name != "[[Error en Nombre]]" && this.id != "[[Error en C.I.]]")
+                Console.WriteLine($"Soy {this.name} y mi cédula es {this.id}"); 
         } 
     } 
 }
